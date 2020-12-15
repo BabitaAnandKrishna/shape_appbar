@@ -5,28 +5,39 @@ class FlashDesignAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple,
+             backgroundColor: Colors.pink,
       appBar: AppBar(
         elevation: 15,
-        backgroundColor: Color(0xff083EF6),
+        // backgroundColor: Color(0xff083EF6),
         leading: Icon(Icons.arrow_back,color: Colors.black),
         actions: [(Icon(Icons.search,color: Colors.black))],
         flexibleSpace:ClipRRect(
           borderRadius: BorderRadius.only(bottomLeft: Radius.circular(600)),
+          // child: Container(
+          //   decoration: BoxDecoration(
+          //       gradient: SweepGradient(
+          //         endAngle: 1,
+          //           colors: [Color(0xff883EF6),Color(0xff0080FF),
+          //             Colors.deepPurpleAccent,Colors.lightBlueAccent,
+          //             Colors.deepPurple,Colors.white ]
+          //
+          //       )
+          //   ),
+          // ),
           child: Container(
             decoration: BoxDecoration(
                 gradient: SweepGradient(
-                  endAngle: 1,
-                    colors: [Color(0xff883EF6),Color(0xff0080FF),
-                      Colors.deepPurpleAccent,Colors.lightBlueAccent,
-                      Colors.deepPurple,Colors.white ]
-
-                )
+                    endAngle: 1,
+                    colors: [Colors.red,Colors.orange,
+                      Colors.yellow,Colors.green,
+                      Colors.blue,Colors.indigo,Colors.purpleAccent[400] ,Colors.white],
+                ),
             ),
           ),
         ),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.only(bottomLeft: Radius.circular(600)),
+
         ),
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(400),
@@ -51,7 +62,7 @@ class FlashDesignAppBar extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(left:60.0),
-                child: Text("Bot", style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),
+                child: Text("Friends", style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),
               ),
               SizedBox(height: 250,)
             ],

@@ -35,7 +35,7 @@ class CenterDesignClass extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(left:48.0),
-                child: Text("Bot", style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),),
+                child: Text("Friends", style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),),
               ),
               // SizedBox(height: 100,)
               SizedBox(height: 250,)

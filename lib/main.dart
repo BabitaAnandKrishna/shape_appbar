@@ -4,6 +4,7 @@ import 'Screen/AppBarShape.dart';
 import 'Screen/CircleDesignAppBar.dart';
 import 'Screen/Container.dart';
 import 'Screen/FlasDesignAppBar.dart';
+import 'Screen/Transparent_App.dart';
 import 'Screen/bottomRightDesignClass.dart';
 import 'Screen/centreDesign.dart';
 
@@ -34,12 +35,13 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      //home: AppBarShapClass(),
-      //   home:   ContainerClass(),
-      //   home:bottomRightClass(),
-      //   home: CenterDesignClass(),
-      //   home: CircleDesignAppBarClass(),
-        home:FlashDesignAppBar(),
+        // home: AppBarShapClass(),
+        // home: ContainerClass(),
+        // home: bottomRightClass(),
+        // home: CenterDesignClass(),
+        // home: CircleDesignAppBarClass(),
+        // home:FlashDesignAppBar(),
+      home: Transparent_AppBar(),
     );
   }
 }

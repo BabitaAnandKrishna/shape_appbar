@@ -14,8 +14,11 @@ class CircleDesignAppBarClass extends StatelessWidget {
             child: Container(
             decoration: BoxDecoration(
               gradient: RadialGradient(
-                  colors: [Color(0xff883EF6),Color(0xff0080FF),
-                  Colors.deepPurpleAccent,Colors.lightBlueAccent,Colors.deepPurple,Colors.black ]
+                  colors: [Colors.red,Colors.orange,
+                    Colors.yellow,Colors.green,
+                    Colors.blue,Colors.indigo,Colors.purpleAccent[400] ,Colors.black],
+                  // colors: [Color(0xff883EF6),Color(0xff0080FF),
+                  // Colors.deepPurpleAccent,Colors.lightBlueAccent,Colors.deepPurple,Colors.black ]
 
               )
             ),
@@ -44,7 +47,7 @@ class CircleDesignAppBarClass extends StatelessWidget {
               ),
               Padding(
                 padding: const EdgeInsets.only(left:48.0),
-                child: Text("Bot", style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),),
+                child: Text("Friends", style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),),
               ),
               SizedBox(height: 100,)
             ],
